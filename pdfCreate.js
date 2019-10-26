@@ -40,7 +40,7 @@
 //         fees: ''
 //     },
 // }
-let generatePdf = function(inputData, pdfData){
+let generatePdf = function(pdfData){
 
     pdfMake.createPdf(pdfData).open();
 }
@@ -634,6 +634,6 @@ $('#submitData').click(function(){
           }
       };
       
-    generatePdf(inputData, pdfData);
+    generatePdf(pdfData);
 
 });
