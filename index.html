@@ -5,51 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.60/pdfmake.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.60/vfs_fonts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body style="text-align: center;">
-    <h1>Hello User!!!</h1>
-    <h2 id="html2pdf">This will be pdf</h2>
+
+    <input id='repName' placeholder='Rep Name'>
+    <input id='custName' placeholder='Customer Name'>
+    <input id='date' placeholder='Date'>
+    <br/>
+    <input id='benefit1' placeholder='benefit1'>
+    <input id='benefit2' placeholder='benefit2'>
+    <input id='benefit3' placeholder='benefit3'>
+    <input id='benefit4' placeholder='benefit4'>
+    <input id='benefit5' placeholder='benefit5'>
+    <input id='benefit6' placeholder='benefit6'>
+    <br/>
+    <input id='currentBill' placeholder='currentBill'>
+    <input id='currentHomeService' placeholder='currentHomeService'>
+    <input id='currentBillTotal' placeholder='currentBillTotal'>
+    <br/>
+    <input id='option1PlanTitle' placeholder='option1PlanTitle'>
+    <input id='option1DataPrice' placeholder='option1DataPrice'>
+    <input id='option1LineAccessPrice' placeholder='option1LineAccessPrice'>
+    <input id='option1ProtectionPrice' placeholder='option1ProtectionPrice'>
+    <input id='option1DppPrice' placeholder='option1DppPrice'>
+    <input id='option1TotalPrice' placeholder='option1TotalPrice'>
+    <br/>
+    <input id='option1PriceToday' placeholder='option1PriceToday'>
+    <input id='option1PriceDiff' placeholder='option1PriceDiff'>
+    <input id='option1Fees' placeholder='option1Fees'>
+    <br/>
+    <input id='option2PlanTitle' placeholder='option2PlanTitle'>
+    <input id='option2DataPrice' placeholder='option2DataPrice'>
+    <input id='option2LineAccessPrice' placeholder='option2LineAccessPrice'>
+    <input id='option2ProtectionPrice' placeholder='option2ProtectionPrice'>
+    <input id='option2DppPrice' placeholder='option2DppPrice'>
+    <input id='option2TotalPrice' placeholder='option2TotalPrice'>
+    <br/>
+    <input id='option2PriceToday' placeholder='option2PriceToday'>
+    <input id='option2PriceDiff' placeholder='option2PriceDiff'>
+    <input id='option2Fees' placeholder='option2Fees'>
+
+
+    <button id='submitData'>SUBMIT DATA</button>
+
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
-
-    <div style="text-align: center;">
-        text is here
-        <hr style="height: 1px; margin: 0; color: black; background: black">
-        <div style="background-color: lightgray; height: 50mm; width: 92%; margin: 0 auto">dsada</div>
-    </div>
-
-    <!-- /////////////////////////////vvvvBENEFITS SHEET HTMLvvvv//////////////////////////////////// -->
-    
-        <div id="benefitSheet" style="text-align: center; display: block; width: 279.4mm; height: 215.9mm;">
-
-            <header style="text-align: center; font-size:70px; margin-bottom: 5mm"><b>Wireless</b>World</header>
-
-            <div style="padding-bottom: 2mm; background-color: lightgray; height: 50mm; width: 256mm; margin: 0 auto; display: table; clear: both;">
-                <div style="width: 100%; height: 30%">
-                    BENEFITS
-                </div>
-                <div style="width: 50%; height: 70%; float: left;">
-                    <div style="border-bottom: 1px solid black; width: 80%; height: 33.33%; margin: 0 auto;">dsadsa</div>
-                    <div style="border-bottom: 1px solid black; width: 80%; height: 33.33%; margin: 0 auto;">dsadsa</div>
-                    <div style="border-bottom: 1px solid black; width: 80%; height: 33.33%; margin: 0 auto;">dsadsa</div>
-                </div>
-                <div style="width: 50%; height: 70%; float: left;">
-                    <div style="border-bottom: 1px solid black; width: 80%; height: 33.33%; margin: 0 auto;">dsadsa</div>
-                    <div style="border-bottom: 1px solid black; width: 80%; height: 33.33%; margin: 0 auto;">dsadsa</div>
-                    <div style="border-bottom: 1px solid black; width: 80%; height: 33.33%; margin: 0 auto;">dsadsa</div>
-                </div>
-            </div>
-
-            <div style="border: 1px solid black; height: 80mm; width: 91%; margin: 0 auto;"></div>
-        
-            
-        </div>
 
 
 
-    <!-- /////////////////////////////^^^^BENEFITS SHEET HTML^^^^//////////////////////////////////// -->
-    <script src="fjs.js"></script>
+
+
+
+    <script src="benefitSheet.js"></script>
+    <script src="pdfCreate.js"></script>
 </body>
 </html>
